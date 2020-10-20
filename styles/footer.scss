@@ -1,7 +1,7 @@
 @import './config';
 
 footer {
-    background-color: white;
+    background-color:$gray95;
     padding: 30px 0;
     text-align: center;
     .footer-text {
@@ -11,6 +11,13 @@ footer {
     }
     .icon {
         margin: 10px;
+    }
+    .bar {
+        @extend .container;
+        background-color:$whisper;
+        height: 2px;
+        margin-top: 60px;
+        
     }
     .icon-fill {
         border: 1px solid $gold;
