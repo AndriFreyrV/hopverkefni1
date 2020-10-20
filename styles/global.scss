@@ -1,8 +1,85 @@
 @import './config';
 // Allir stílar fyrir "global", þ.e.a.s. type selectorar, reset etc
 
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;500&display=swap');
+
 * {
   box-sizing: border-box;
   margin: 0;
-  padding: 0;
+  padding: 0; 
+}
+
+body {
+  font-family: 'Poppins';
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Playfair Display';
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 60px;
+}
+
+h2 {
+  font-size: 40px;
+}
+h4{
+  font-size:14px
+}
+
+a {
+  text-decoration: none;
+  color: $gold;
+}
+input{
+  background-color: transparent;
+  outline: none;
+  border: none;
+}
+
+button {
+  position: relative;
+  display: block;
+  appearance: none;
+  border: 2px solid $gold;
+  color: $gold;
+  outline: 0;
+  background: transparent;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 10px 30px;
+  cursor: pointer;
+
+  &::after {
+    padding: 10px 30px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: $gold;
+    color: white;
+    cursor: pointer;
+    content: attr(data-title);
+
+    transition: clip-path 0.3s ease-in-out;
+    clip-path: inset(0% 100% 0% 0%);
+  }
+
+  &:hover::after {
+    clip-path: inset(0% 0% 0% 0%);
+  }
+}
+.gray-text{
+  color: $light-grey;
+}
+
+article {
+  @extend .grid;
+}
+
+section {
+  padding: 40px 0;
 }

@@ -1,7 +1,208 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;500&display=swap");
+.grid, article, header .content, .hero-grid, .see-more, .newsletter-content {
+  margin: 0 auto;
+  max-width: 1290px; }
+
+.grid, article, header .content, .hero-grid, .see-more, .newsletter-content {
+  margin: 0 auto;
+  max-width: 1290px; }
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0; }
 
-header h1 {
-  font-size: 48px; }
+body {
+  font-family: 'Poppins'; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Playfair Display';
+  font-weight: 700; }
+
+h1 {
+  font-size: 60px; }
+
+h2 {
+  font-size: 40px; }
+
+h4 {
+  font-size: 14px; }
+
+a {
+  text-decoration: none;
+  color: #E3CDB1; }
+
+input {
+  background-color: transparent;
+  outline: none;
+  border: none; }
+
+button {
+  position: relative;
+  display: block;
+  appearance: none;
+  border: 2px solid #E3CDB1;
+  color: #E3CDB1;
+  outline: 0;
+  background: transparent;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 10px 30px;
+  cursor: pointer; }
+  button::after {
+    padding: 10px 30px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: #E3CDB1;
+    color: white;
+    cursor: pointer;
+    content: attr(data-title);
+    transition: clip-path 0.3s ease-in-out;
+    clip-path: inset(0% 100% 0% 0%); }
+  button:hover::after {
+    clip-path: inset(0% 0% 0% 0%); }
+
+.gray-text {
+  color: #D0D0D0; }
+
+section {
+  padding: 40px 0; }
+
+.grid, article, header .content, .hero-grid, .see-more, .newsletter-content {
+  margin: 0 auto;
+  max-width: 1290px; }
+
+header {
+  background-color: white;
+  padding: 30px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1; }
+
+header .content {
+  display: flex;
+  justify-content: space-between; }
+  header .content .nav {
+    display: flex;
+    justify-content: space-between;
+    width: 225px; }
+    header .content .nav > * {
+      color: #9B9B9B; }
+
+.grid, article, header .content, .hero-grid, .see-more, .newsletter-content {
+  margin: 0 auto;
+  max-width: 1290px; }
+
+.hero {
+  background-image: url(img/cake.png);
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  min-height: 800px;
+  position: relative; }
+  .hero-grid {
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+  .hero-text {
+    width: 550px;
+    display: flex;
+    padding-top: 30px;
+    padding-bottom: 30px; }
+  .hero-seemore {
+    font-size: 24px; }
+
+.kicker {
+  color: #E3CDB1;
+  font-size: 16px; }
+
+.grid, article, header .content, .hero-grid, .see-more, .newsletter-content {
+  margin: 0 auto;
+  max-width: 1290px; }
+
+.recipe-list {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -10px;
+  margin-right: -10px;
+  margin-bottom: 10px; }
+
+.recipe {
+  width: calc(33.333333% - 20px);
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0px 7px 14px rgba(0, 0, 0, 0.05); }
+
+.recipe-image {
+  max-width: 100%; }
+
+.recipe-footer {
+  background: white;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  padding: 25px; }
+
+.recipe-month {
+  flex: 0 100%; }
+
+.recipe-title {
+  font-size: 22px;
+  flex: 1; }
+
+.see-more {
+  height: 30px;
+  border-bottom: 1px solid #D0D0D0;
+  padding-top: 10px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px; }
+  .see-more .content {
+    padding: 0 40px;
+    background-color: white; }
+
+.recipe-month {
+  font-weight: 300;
+  color: #9B9B9B;
+  font-size: 14px; }
+
+.recipe-section {
+  position: relative;
+  overflow: hidden; }
+  .recipe-section::before {
+    display: block;
+    content: "";
+    background: #FAFAFA;
+    position: absolute;
+    top: 30%;
+    left: 0;
+    right: 0;
+    bottom: 0%; }
+
+.grid, article, header .content, .hero-grid, .see-more, .newsletter-content {
+  margin: 0 auto;
+  max-width: 1290px; }
+
+.newsletter {
+  height: 340px;
+  background-color: #000000;
+  padding-bottom: 130px; }
+  .newsletter-content {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 100%; }
+  .newsletter-subsribe {
+    background-color: #000000; }
+  .newsletter-email {
+    width: 300px;
+    display: flex;
+    flex-direction: column; }
+  .newsletter-field {
+    border-bottom: 1px solid #E3CDB1; }

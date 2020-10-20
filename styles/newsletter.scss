@@ -1,0 +1,27 @@
+@import "./config";
+
+.newsletter{
+    height: 340px;
+    background-color: $black;
+    padding-bottom: 130px;
+
+    &-content {
+        @extend .grid;
+        color: $white;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        height: 100%;
+    }
+    &-subsribe{
+        background-color: $black;
+    }
+    &-email{
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+    }
+    &-field{
+        border-bottom: 1px solid $gold;
+    }
+}

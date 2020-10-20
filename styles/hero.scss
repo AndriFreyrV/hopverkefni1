@@ -1,0 +1,32 @@
+@import "./config";
+
+.hero {
+  background-image: url(img/cake.png);
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  min-height: 800px;
+  position: relative;
+
+  &-grid {
+    @extend .grid;
+    height: 800px; // TODO: FIX
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &-text{
+    width: 550px;
+    display: flex;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  &-seemore{
+      font-size: 24px;
+  }
+}
+.kicker{
+    color: $gold;
+    font-size: 16px;
+}

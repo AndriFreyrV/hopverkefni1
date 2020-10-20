@@ -1,0 +1,33 @@
+// COLORS
+$gold: #E3CDB1;
+$light-gold: #F7F1EB;
+$charcoal: #525252;
+$dark-grey: #5E5B69;
+$grey: #9B9B9B;
+$light-grey: #D0D0D0;
+$grey-bg: #FAFAFA;
+$black:#000000;
+$white:white;
+
+
+$max-width: 1290px;
+
+.grid {
+    margin: 0 auto;
+    max-width: $max-width;
+}
+
+@mixin background-stripe($color, $top-offset, $bottom-offset) {
+    position: relative;
+    overflow: hidden;
+    &::before {
+        display: block;
+        content: "";
+        background: $color;
+        position: absolute;
+        top: $top-offset;
+        left: 0;
+        right: 0;
+        bottom: $bottom-offset;
+    }
+}
