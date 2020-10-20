@@ -1,9 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;500&display=swap");
-.grid, article, header .content, .hero-grid, .see-more, .newsletter-content {
+.container, article, header .content, .hero-grid, .see-more, .newsletter-content {
   margin: 0 auto;
   max-width: 1290px; }
 
-.grid, article, header .content, .hero-grid, .see-more, .newsletter-content {
+.container, article, header .content, .hero-grid, .see-more, .newsletter-content {
   margin: 0 auto;
   max-width: 1290px; }
 
@@ -71,7 +71,7 @@ button {
 section {
   padding: 40px 0; }
 
-.grid, article, header .content, .hero-grid, .see-more, .newsletter-content {
+.container, article, header .content, .hero-grid, .see-more, .newsletter-content {
   margin: 0 auto;
   max-width: 1290px; }
 
@@ -92,7 +92,7 @@ header .content {
     header .content .nav > * {
       color: #9B9B9B; }
 
-.grid, article, header .content, .hero-grid, .see-more, .newsletter-content {
+.container, article, header .content, .hero-grid, .see-more, .newsletter-content {
   margin: 0 auto;
   max-width: 1290px; }
 
@@ -119,7 +119,7 @@ header .content {
   color: #E3CDB1;
   font-size: 16px; }
 
-.grid, article, header .content, .hero-grid, .see-more, .newsletter-content {
+.container, article, header .content, .hero-grid, .see-more, .newsletter-content {
   margin: 0 auto;
   max-width: 1290px; }
 
@@ -184,7 +184,7 @@ header .content {
     right: 0;
     bottom: 0%; }
 
-.grid, article, header .content, .hero-grid, .see-more, .newsletter-content {
+.container, article, header .content, .hero-grid, .see-more, .newsletter-content {
   margin: 0 auto;
   max-width: 1290px; }
 
@@ -201,8 +201,18 @@ header .content {
   .newsletter-subsribe {
     background-color: #000000; }
   .newsletter-email {
-    width: 300px;
+    max-width: 300px;
     display: flex;
     flex-direction: column; }
+  .newsletter-email > label {
+    font-size: 14px; }
   .newsletter-field {
+    border-bottom: 1px solid #525252;
+    color: white;
+    font-size: 22px;
+    font-family: 'Playfair Display';
+    padding: 5px 0; }
+  .newsletter-field::placeholder {
+    color: #525252; }
+  .newsletter-field:focus {
     border-bottom: 1px solid #E3CDB1; }

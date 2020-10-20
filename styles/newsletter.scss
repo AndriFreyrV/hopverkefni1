@@ -6,7 +6,7 @@
     padding-bottom: 130px;
 
     &-content {
-        @extend .grid;
+        @extend .container;
         color: $white;
         display: flex;
         justify-content: space-between;
@@ -17,11 +17,29 @@
         background-color: $black;
     }
     &-email{
-        width: 300px;
+        max-width: 300px;
         display: flex;
         flex-direction: column;
+        
     }
-    &-field{
+
+    &-email > label {
+        font-size: 14px;
+    }
+
+    &-field {
+        border-bottom: 1px solid $charcoal;
+        color: white;
+        font-size: 22px;
+        font-family: 'Playfair Display';
+        padding: 5px 0;
+    }
+
+    &-field::placeholder {
+        color: $charcoal;
+    }
+
+    &-field:focus {
         border-bottom: 1px solid $gold;
     }
 }

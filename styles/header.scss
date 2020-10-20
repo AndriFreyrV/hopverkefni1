@@ -9,7 +9,7 @@ header {
 }
 
 header .content{
-    @extend .grid;
+    @extend .container;
 
     display: flex;
     justify-content: space-between;
