@@ -120,6 +120,14 @@ header .content {
   color: #E3CDB1;
   font-size: 16px; }
 
+@media (max-width: 599px) {
+  .hero-mobile {
+    align-items: center; }
+  .hero-text-mobile {
+    font-size: 0;
+    height: 0;
+    width: 0; } }
+
 .container, article, header .content, .hero-grid, .see-more, .newsletter-content, footer .bar {
   margin: 0 auto;
   max-width: 1290px; }

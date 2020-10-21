@@ -30,3 +30,16 @@
     color: $gold;
     font-size: 16px;
 }
+@media (max-width: 599px) {
+  .hero-mobile{
+    align-items: center;
+  }
+  .hero-text-mobile{
+    font-size: 0;
+    height: 0;
+    width: 0;
+
+  }
+  .hero-title-mobile{
+  }
+}
