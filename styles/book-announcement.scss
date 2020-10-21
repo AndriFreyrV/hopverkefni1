@@ -3,3 +3,23 @@
 .book-announcement {
 }
 
+.book-content{
+    margin-left: 8.33333333%;
+    margin-right: 8.3333333%;
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+}
+.book-info{
+    /*margin-left: 8.333%;*/
+    max-height: 350px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 550px;
+    justify-content: space-between;
+}
+.book-wrapper{
+    
+}
+
