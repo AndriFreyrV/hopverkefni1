@@ -4,6 +4,7 @@
   background-image: url(img/cake.png);
   background-repeat: no-repeat;
   background-position: bottom right;
+  background-color: $grey-bg;
   min-height: 800px;
   position: relative;
 
@@ -16,30 +17,32 @@
     justify-content: center;
   }
 
-  &-text{
+  &-text {
     width: 550px;
     display: flex;
     padding-top: 30px;
     padding-bottom: 30px;
   }
-  &-seemore{
-      font-size: 24px;
+  &-seemore {
+    font-size: 24px;
   }
 }
-.kicker{
-    color: $gold;
-    font-size: 16px;
+.kicker {
+  color: $gold;
+  font-size: 16px;
 }
 @media (max-width: 599px) {
-  .hero-mobile{
+  .hero-mobile {
     align-items: center;
   }
-  .hero-text-mobile{
+  .hero-text-mobile {
     font-size: 0;
     height: 0;
     width: 0;
-
   }
-  .hero-title-mobile{
+  .hero-title-mobile {
+  }
+  h1 {
+    font-size: 32px;
   }
 }

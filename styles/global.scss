@@ -1,20 +1,25 @@
-@import './config';
+@import "./config";
 // Allir stílar fyrir "global", þ.e.a.s. type selectorar, reset etc
 
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;500&display=swap");
 
 * {
   box-sizing: border-box;
   margin: 0;
-  padding: 0; 
+  padding: 0;
 }
 
 body {
-  font-family: 'Poppins';
+  font-family: "Poppins";
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Playfair Display';
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Playfair Display";
   font-weight: 700;
 }
 
@@ -26,18 +31,27 @@ h2 {
   font-size: 40px;
   margin-bottom: 30px;
 }
-h4{
-  font-size:14px
+h4 {
+  font-size: 14px;
 }
 
 a {
   text-decoration: none;
   color: $gold;
 }
-input{
+input {
   background-color: transparent;
   outline: none;
   border: none;
+}
+
+hr {
+  @extend .container;
+  background-color: $whisper;
+  border: 0;
+  height: 2px;
+  margin-top: 60px;
+  display: none;
 }
 
 button {
@@ -73,7 +87,7 @@ button {
     clip-path: inset(0% 0% 0% 0%);
   }
 }
-.gray-text{
+.gray-text {
   color: $light-grey;
 }
 

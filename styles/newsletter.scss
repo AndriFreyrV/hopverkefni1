@@ -1,45 +1,49 @@
 @import "./config";
 
-.newsletter{
-    height: 340px;
+.newsletter {
+  height: 340px;
+  background-color: $black;
+  padding-bottom: 130px;
+  h2 {
+    margin-bottom: 0;
+  }
+  &-content {
+    @extend .container;
+    color: $white;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 100%;
+  }
+  &-subsribe {
     background-color: $black;
-    padding-bottom: 130px;
+  }
+  &-email {
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+  }
 
-    &-content {
-        @extend .container;
-        color: $white;
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-end;
-        height: 100%;
-    }
-    &-subsribe{
-        background-color: $black;
-    }
-    &-email{
-        max-width: 300px;
-        display: flex;
-        flex-direction: column;
-        
-    }
+  &-email > label {
+    font-size: 14px;
+  }
 
-    &-email > label {
-        font-size: 14px;
-    }
+  &-field {
+    border-bottom: 1px solid $charcoal;
+    color: white;
+    font-size: 22px;
+    font-family: "Playfair Display";
+    padding: 5px 0;
+  }
 
-    &-field {
-        border-bottom: 1px solid $charcoal;
-        color: white;
-        font-size: 22px;
-        font-family: 'Playfair Display';
-        padding: 5px 0;
-    }
+  &-field::placeholder {
+    color: $charcoal;
+  }
 
-    &-field::placeholder {
-        color: $charcoal;
-    }
-
-    &-field:focus {
-        border-bottom: 1px solid $gold;
-    }
+  &-field:focus {
+    border-bottom: 1px solid $gold;
+  }
+  &-title {
+    align-items: baseline;
+  }
 }
