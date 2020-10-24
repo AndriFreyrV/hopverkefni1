@@ -1,0 +1,48 @@
+@import "./config";
+
+h3 {
+    font-size: 40px;
+    color: $light-grey;
+    margin-bottom: 40px;
+    margin-top: 70px;
+    font-weight: bold;
+}
+
+.ingredients {
+    display: flex;
+    flex-direction: column;
+    margin-right: 200px;
+    font-size: 18px;
+}
+
+.ingredient {
+    color: $grey;
+    font-weight: 300;
+    margin-bottom: 40px;
+    align-self: center;
+}
+
+.numberof {
+    font-size: 36px;
+    color: $gold;
+    margin-right: 50px;
+    font-family: "Playfair Display";
+    align-self: center;
+}
+
+.method {
+    display: flex;
+    @extend .container;
+}
+
+.recipe-detail {
+    font-size: 18px;
+    color: $dark-grey;
+    font-weight: 300;
+    line-height: 32px;
+}
+.recipe-detail p {
+    margin-bottom: 64px;
+}
+
+
