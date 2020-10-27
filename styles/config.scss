@@ -17,6 +17,7 @@ $max-width: 1290px;
 .container {
   margin: 0 auto;
   max-width: $max-width;
+  overflow: hidden;
 }
 
 @mixin background-stripe($color, $top-offset, $bottom-offset) {
