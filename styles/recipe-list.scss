@@ -96,3 +96,19 @@
 .recipe-section {
   @include background-stripe($grey-bg, 30%, 0%);
 }
+
+@media (max-width: 599px) {
+
+  .recipe {
+    width: calc(100% - 20px);
+  
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+
+    padding-left: 15px;
+    padding-right: 15px;
+  
+    box-shadow: 0px 7px 14px rgba(0, 0, 0, 0.05);
+  }
+}

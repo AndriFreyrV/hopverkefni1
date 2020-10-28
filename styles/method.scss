@@ -13,7 +13,6 @@
     color: $grey;
     font-weight: 300;
     margin-bottom: 40px;
-    align-self: center;
 }
 
 .numberof {
@@ -21,7 +20,6 @@
     color: $gold;
     margin-right: 50px;
     font-family: "Playfair Display";
-    align-self: center;
 }
 
 .method {
@@ -32,7 +30,6 @@
         color: $light-grey;
         margin-bottom: 40px;
         margin-top: 70px;
-        font-weight: bold;
     }
 }
 
@@ -46,4 +43,27 @@
     margin-bottom: 64px;
 }
 
+@media (max-width: 599px) {
+    .ingredients {
+        margin-right: 0px;
+        font-size: 16px;
+    }
+    
+    .method {
+        flex-direction: column;
+        padding: 8.33333%;
+    }
 
+    .method h3 {
+        font-size: 20px;
+        margin-top: 40px;
+    }
+
+    .numberof {
+        font-size: 32px;
+    }
+
+    .recipe-detail {
+        font-size: 15px;
+    }
+} 
