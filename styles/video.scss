@@ -1,18 +1,21 @@
 @import "./config";
-.hero-video{
-    background-image:
-    linear-gradient(270deg, rgba(0, 0, 0, 0.0001) 0%, #000000 65%),
+.hero-video {
+  background-image: linear-gradient(
+      270deg,
+      rgba(0, 0, 0, 0.0001) 0%,
+      #000000 65%
+    ),
     url(img/ingredients.png);
-    background-color: $black;
-    color:$white-95;
-    margin-top: -230px; 
-    h1{
-        color:$white;
-    }
+  background-color: $black;
+  color: $white-95;
+  min-height: initial;
+  h1 {
+    color: $white;
+  }
 }
 .video-text {
-    color:$grey;
+  color: $grey;
 }
-.vid{
-    padding-top: 230px; // T0DO FIX
+.vid {
+  height: 500px;
 }

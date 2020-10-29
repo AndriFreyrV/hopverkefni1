@@ -1,30 +1,60 @@
-@import './config';
+@import "./config";
 
 header {
-    background-color: white;
-    padding: 30px 0;
-    position: sticky;
-    top: 0;
-    z-index: 1;
+  background-color: white;
+  padding: 30px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1;
 }
 
-header .content{
-    @extend .container;
+header .content {
+  @extend .container;
 
+  display: flex;
+  justify-content: space-between;
+
+  .logotype {
+  }
+
+  .nav {
     display: flex;
     justify-content: space-between;
-
-    .logotype {
-
+    width: 225px;
+    > * {
+      color: $grey;
     }
+  }
+}
 
-    .nav {
-        display: flex;
-        justify-content: space-between;
-        width: 225px;
-        > * {
-            color: $grey;
-        }
+header .content .burger {
+  display: none;
+  cursor: pointer;
+}
 
-    }
+.menu {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  h1 {
+    font-size: 90px;
+  }
+  a {
+    color: $black;
+  }
+}
+
+@media (max-width: 599px) {
+  header .content .nav {
+    display: none;
+  }
+  header .content .burger {
+    display: block;
+  }
+  .menu {
+    display: flex;
+  }
+  .menu.hidden {
+    display: none;
+  }
 }

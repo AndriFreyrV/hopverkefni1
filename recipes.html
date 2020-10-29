@@ -21,11 +21,26 @@
         </div>
         <div class="nav">
           <a href="recipes.html">Recipes</a>
-          <a href="#">Videos</a>
+          <a href="video.html">Videos</a>
           <a href="#">About us</a>
+        </div>
+        <div class="burger">
+          <img src="img/burger.svg" alt="logo" />
         </div>
       </div>
     </header>
+    <section class="menu hidden">
+      <a href="">
+        <h1>Home</h1>
+      </a>
+      <a href="/recipes.html">
+        <h1>Recipes</h1>
+      </a>
+      <a href="/video.html">
+        <h1>Videos</h1>
+      </a>
+      <h1>About</h1>
+    </section>
     <main>
       <section class="recipe-section">
         <article>
@@ -263,12 +278,6 @@
       <div class="website-url">yamyam.com</div>
     </footer>
 
-    <script>
-      document
-        .querySelectorAll("button")
-        .forEach((button) =>
-          button.setAttribute("data-title", button.innerText)
-        );
-    </script>
+    <script src="global.js"></script>
   </body>
 </html>

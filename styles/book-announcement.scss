@@ -18,6 +18,11 @@
   flex-wrap: wrap;
   max-width: 550px;
   justify-content: space-between;
+
+  p {
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
 }
 .book-wrapper {
   width: 100%;
