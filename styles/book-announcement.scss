@@ -1,37 +1,41 @@
-@import "./config";
+@import './config';
 
 .book-announcement {
   background: $light-gold;
 }
 
 .book-content {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
   margin-left: 8.33333333%;
   margin-right: 8.3333333%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
 }
+
 .book-info {
-  /*margin-left: 8.333%;*/
+  /* margin-left: 8.333%; */
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  max-width: 550px;
   justify-content: space-between;
+  max-width: 550px;
 
   p {
-    margin-top: 10px;
     margin-bottom: 20px;
+    margin-top: 10px;
   }
 }
+
 .book-wrapper {
   width: 100%;
 }
+
 .book-img {
-  max-width: 440px;
   box-shadow: -15px 15px 0 rgba(0, 0, 0, 0.05);
+  max-width: 440px;
   transform: translateY(75px);
 }
+
 .yam-image {
   max-width: 100%;
 }

@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "live-server",
     "sass": "node-sass styles.scss styles.css",
-    "watch-sass": "nodemon -e scss --exec \"node-sass styles.scss styles.css\""
+    "watch-sass": "nodemon -e scss --exec \"node-sass styles.scss styles.css\"",
+    "lint": "stylelint styles.scss ./**/*.scss"
   },
   "repository": {
     "type": "git",
@@ -23,6 +24,9 @@
     "node-sass": "^4.14.1"
   },
   "devDependencies": {
-    "nodemon": "^2.0.6"
+    "nodemon": "^2.0.6",
+    "stylelint": "^13.7.2",
+    "stylelint-config-sass-guidelines": "^7.1.0",
+    "stylelint-config-standard": "^20.0.0"
   }
 }

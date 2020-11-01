@@ -1,69 +1,70 @@
-@import "./config";
-
-
+@import './config';
 
 .ingredients {
-    display: flex;
-    flex-direction: column;
-    margin-right: 200px;
-    font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  font-size: 18px;
+  margin-right: 200px;
 }
 
 .ingredient {
-    color: $grey;
-    font-weight: 300;
-    margin-bottom: 40px;
+  color: $grey;
+  font-weight: 300;
+  margin-bottom: 40px;
 }
 
 .numberof {
-    font-size: 36px;
-    color: $gold;
-    margin-right: 50px;
-    font-family: "Playfair Display";
+  color: $gold;
+  font-family: 'Playfair Display', sans-serif;
+  font-size: 36px;
+  margin-right: 50px;
 }
 
 .method {
-    display: flex;
-    @extend .container;
-    h3 {
-        font-size: 40px;
-        color: $light-grey;
-        margin-bottom: 40px;
-        margin-top: 70px;
-    }
+  @extend .container;
+
+  display: flex;
+
+  h3 {
+    color: $light-grey;
+    font-size: 40px;
+    margin-bottom: 40px;
+    margin-top: 70px;
+  }
 }
 
 .recipe-detail {
-    font-size: 18px;
-    color: $dark-grey;
-    font-weight: 300;
-    line-height: 32px;
+  color: $dark-grey;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 32px;
 }
+
 .recipe-detail p {
-    margin-bottom: 64px;
+  margin-bottom: 64px;
 }
 
 @media (max-width: 599px) {
-    .ingredients {
-        margin-right: 0px;
-        font-size: 16px;
-    }
-    
-    .method {
-        flex-direction: column;
-        padding: 8.33333%;
-    }
+  .ingredients {
+    font-size: 16px;
+    margin-right: 0;
+  }
 
-    .method h3 {
-        font-size: 20px;
-        margin-top: 40px;
-    }
+  .method {
+    flex-direction: column;
+    padding: 8.33333%;
+  }
 
-    .numberof {
-        font-size: 32px;
-    }
+  .method h3 {
+    font-size: 20px;
+    margin-top: 40px;
+  }
 
-    .recipe-detail {
-        font-size: 15px;
-    }
-} 
+  .numberof {
+    font-size: 32px;
+  }
+
+  .recipe-detail {
+    font-size: 15px;
+  }
+}

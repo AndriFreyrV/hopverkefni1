@@ -1,66 +1,73 @@
-@import "./config";
+@import './config';
 
 .first-word {
   font-weight: bold;
 }
 
 .hero {
-  background-image: url(img/cake.png);
-  background-repeat: no-repeat;
-  background-position: bottom right;
   background-color: $grey-bg;
+  background-image: url('img/cake.png');
+  background-position: bottom right;
+  background-repeat: no-repeat;
   min-height: 800px;
   position: relative;
 
   &-grid {
     @extend .container;
-    height: 800px; // TODO: FIX
 
     display: flex;
     flex-direction: column;
+    height: 800px; // TODO: FIX
     justify-content: center;
   }
 
   &-text {
-    width: 550px;
     display: flex;
-    padding-top: 30px;
     padding-bottom: 30px;
+    padding-top: 30px;
+    width: 550px;
   }
+
   &-seemore {
     font-size: 24px;
   }
 }
+
 .kicker {
   color: $gold;
   font-size: 16px;
 }
+
 @media (max-width: 599px) {
   .hero-mobile {
     align-items: center;
   }
+
   .hero-text-mobile {
     font-size: 0;
     height: 0;
     width: 0;
   }
-  .hero-title-mobile {
-  }
+
   h1 {
     font-size: 32px;
   }
+
   .kicker {
     font-size: 12px;
     text-align: center;
   }
+
   h2 {
     font-size: 20px;
     text-align: center;
   }
+
   .recipe-info {
     flex-direction: column;
     font-size: 15px;
   }
+
   .recipe-about {
     margin: 20px;
   }

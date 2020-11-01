@@ -1,27 +1,32 @@
-@import "./config";
+@import './config';
 
 .newsletter {
-  height: 340px;
   background-color: $black;
+  height: 340px;
   padding-bottom: 130px;
+
   h2 {
     margin-bottom: 0;
   }
+
   &-content {
     @extend .container;
+
+    align-items: flex-end;
     color: $white;
     display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
     height: 100%;
+    justify-content: space-between;
   }
+
   &-subsribe {
     background-color: $black;
   }
+
   &-email {
-    max-width: 300px;
     display: flex;
     flex-direction: column;
+    max-width: 300px;
   }
 
   &-email > label {
@@ -30,9 +35,9 @@
 
   &-field {
     border-bottom: 1px solid $charcoal;
-    color: white;
+    color: $white;
+    font-family: 'Playfair Display', sans-serif;
     font-size: 22px;
-    font-family: "Playfair Display";
     padding: 5px 0;
   }
 
@@ -43,6 +48,7 @@
   &-field:focus {
     border-bottom: 1px solid $gold;
   }
+
   &-title {
     align-items: baseline;
   }
@@ -52,9 +58,10 @@
   .newsletter {
     padding-bottom: 40px;
   }
+
   .newsletter-content {
-    flex-direction: column;
     align-items: center;
+    flex-direction: column;
     padding: 8.33333%;
   }
 }
